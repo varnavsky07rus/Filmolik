@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:alpha="0.87"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@color/background_rv_home">
+
+            <TextView
+                android:id="@+id/nameRu_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:singleLine="true"
+                android:text="Название фильма"
+                android:textColor="@color/textWhite"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/previewPoster_imageView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/idFilm_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="12345678"
+                android:textColor="@color/textID"
+                android:textSize="10sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/yearFilm_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Год фильма"
+                android:textColor="@color/textWhite"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/nameRu_textView"
+                app:layout_constraintStart_toStartOf="@+id/nameRu_textView"
+                app:layout_constraintTop_toBottomOf="@+id/nameRu_textView" />
+
+            <TextView
+                android:id="@+id/countryFilm_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Страна фильма"
+                android:textColor="@color/textWhite"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/yearFilm_textView"
+                app:layout_constraintStart_toStartOf="@+id/yearFilm_textView"
+                app:layout_constraintTop_toBottomOf="@+id/yearFilm_textView" />
+
+            <TextView
+                android:id="@+id/ratingFilm_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Рейтинг"
+                android:textColor="@color/textWhite"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="@+id/countryFilm_textView"
+                app:layout_constraintTop_toBottomOf="@+id/countryFilm_textView" />
+
+            <ImageView
+                android:id="@+id/previewPoster_imageView"
+                android:layout_width="120dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/avatar" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="4dp"
+                android:text=".кп"
+                android:textColor="@color/textWhite"
+                app:layout_constraintBottom_toBottomOf="@+id/ratingFilm_textView"
+                app:layout_constraintEnd_toEndOf="@+id/countryFilm_textView"
+                app:layout_constraintStart_toEndOf="@+id/ratingFilm_textView"
+                app:layout_constraintTop_toTopOf="@+id/ratingFilm_textView" />
+
+            <TextView
+                android:id="@+id/numberItems"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="0"
+                android:textAlignment="textEnd"
+                android:textColor="@color/textID"
+                app:layout_constraintBottom_toTopOf="@+id/nameRu_textView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toStartOf="@+id/nameRu_textView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

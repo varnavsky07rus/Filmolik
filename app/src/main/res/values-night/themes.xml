@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Filmolik" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/background_rv_home
+        </item>   <!-- цвет иконок навигации и кнопок-->
+
+        <item name="colorPrimaryVariant">@color/background_rv_home</item>         <!-- хз -->
+        <item name="colorOnPrimary">#FFFFFF</item>    <!-- цвет текста на кнопках -->
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#FF0000</item>              <!-- хз -->
+        <item name="colorSecondaryVariant">#FF0000</item>       <!-- хз -->
+        <item name="colorOnSecondary">#FF0000</item>     <!-- хз -->
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">#EB151515
+        </item>      <!-- цвет верхней строки состояния -->
+        <!-- Customize your theme here. -->
+        <item name="bottomNavigationStyle">@style/BottomNavigationViewStyle</item>
+    </style>
+
+    <style name="BottomNavigationViewStyle" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="android:background">#222222</item>
+        <item name="itemTextColor">#CDCDCD</item>
+        <item name="itemIconTint">#939393</item>
+    </style>
+
+    <style name="ThemeOverlay.Filmolik.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_900</item>
+        <item name="fullscreenTextColor">@color/light_blue_A400</item>
+    </style>
+
+</resources>
